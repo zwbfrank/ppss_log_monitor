@@ -7,5 +7,5 @@ class LogMonitorForm(forms.Form):
 		('type2','payLog'),
 	)
 	logType = forms.ChoiceField(choices=TOPIC_CHOICES)
-	logPath = forms.URLField()
-	timeMon = forms.IntegerField()
+	logPath = forms.CharField()
+	timing = forms.IntegerField()

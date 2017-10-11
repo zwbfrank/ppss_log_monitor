@@ -1,23 +1,5 @@
 <p>Log Monitor</p>
 
-<form>
-	<div>
-		<!-- <label>logType:</label>	<input type="text" name="logType"> -->
-		<label>logType: </label><select><option>appLog</option><option>userLog</option></select>
-	</div>
-	<div>
-	 	<label>logPath:</label><br>
-	 	<input type="text" name="logPath"><br>
-	</div>
-	<div>
-	 	<label>logMonitor:</label><br>
-	 	<input type="text" name="logMonitor"><br>
-	</div>
-	<div>
-		<button type="submit"><strong>Submit</strong></button>
-	</div>
-</form>	
-
 <form method="post">
 {% csrf_token %}
 {{ form }}
