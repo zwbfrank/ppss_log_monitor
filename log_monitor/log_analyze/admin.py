@@ -5,3 +5,6 @@ from .models import LogMonitor
 # class LogMonitorAdmin(admin.ModelAdmin):
 # 	pass
 admin.site.register(LogMonitor)
+admin.site.site_header = "Peanut Plan Admin"
+admin.site.site_title = "Peanut Plan Admin"
+

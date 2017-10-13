@@ -6,7 +6,7 @@ from email.header import Header
 from email.utils import parseaddr,formataddr
 
 
-#邮件地址格式化
+#邮件地址
 def _fromat_addr(s):
 	name,addr = parseaddr(s)
 	return formataddr((Header(name,'utf-8').encode(),addr))

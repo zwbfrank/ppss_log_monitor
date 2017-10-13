@@ -14,7 +14,7 @@ logFile2 = ""
 #日志文件一般是按天产生，则通过在程序中判断文件的产生日期与当前时间，更换监控的日志文件  
 
 def log_monitor(logFile):
-	print("监控的日志文件 是%s"%logFile)
+	print("监控的日志文件是 %s"%logFile)
 	# 程序运行10秒，监控另一个日志
 	stoptime=time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()+10))
 	# 程序监控使用是linux命令tail -f来动态监控新追加的日志
@@ -35,5 +35,9 @@ def log_monitor(logFile):
 				break
 				time.sleep(2)
 				log_monitor(logFile2)
+
+
+
 if __name__=='__main__':
+
 	log_monitor(logFile1)
